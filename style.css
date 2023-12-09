@@ -1,0 +1,91 @@
+
+body {
+  font-family: Roboto, sans-serif;
+  background: 
+   linear-gradient(-45deg, #ee7752, #e73c7e, #23f6d5, #23d5ab);
+  background-size: 400% 400%;
+  height: 100vh;
+  animation: gradient 15s ease infinite;
+}
+
+
+
+.merch {
+  color: red;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 100px;
+}
+
+@keyframes gradient{
+  0%{
+    background-position: 0% 50%;
+  }
+    50%{
+      background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #FFD700;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 35px;
+  position: relative;
+  text-align: center;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:black;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left:auto;
+  right:auto;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #23d5ab;
+  width: 0px; 
+}
+.photo{
+    display: block;
+    margin: auto;
+     }
+
+
+  
