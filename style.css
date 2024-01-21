@@ -84,7 +84,7 @@ a::after {
 }
 .photo{
     display: block;
-    margin: auto;
+    margin:0px 150px 0px 580px;
      }
 
 
